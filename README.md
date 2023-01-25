@@ -1,2 +1,6 @@
 # JogoDaVelha
- Com esse projeto eu comeco a pavimentar alguns conhecimentos importantes no desenvolvimento do softwares 
+Através deste projeto, comecei a entender alguns conhecimentos importantes em desenvolvimento de software
+---
+<h4 align="Center">
+🚧🏗️Projeto em Construção... 🏗️🚧
+</h4>
