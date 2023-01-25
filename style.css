@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  bottom: 0 ;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right,
+    #a29bfe,
+    #948bf9,
+    #877cf3, 
+    #7a6ced, 
+    #6c5ce7);
+   
+}
+
+.game-space{
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  background-color: white;
+  width: 1000px;
+  height: 800px;
+  text-align: center;
+
+}
+
+
+.piece{
+  
+  width: 200px;
+  height: 170px;
+  
+}
+
