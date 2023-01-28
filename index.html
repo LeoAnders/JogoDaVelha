@@ -6,8 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jogo da velha</title>
-  <!--Script code-->
-  <script src="./script.js" defer></script>
   <!--Style code-->
   <link rel="stylesheet" href="style.css">
   
@@ -16,33 +14,35 @@
 <body>
   <header></header>
 
+
   <main>
     <div class="game-space">
       <!--First row-->
     <div>
-      <div id="00" class="piece"> <div class="o">O</div> </div>
-      <div id="01" class="piece"> <div class="x">X</div> </div>
-      <div id="02" class="piece"></div>
+      <div id="0" class="cell"></div>
+      <div id="1" class="cell"></div>
+      <div id="2" class="cell"></div>
     </div>
     <!--second row-->
     <div>
-      <div id="03" class="piece"></div>
-      <div id="04" class="piece"></div>
-      <div id="05" class="piece"></div>
+      <div id="3" class="cell"></div>
+      <div id="4" class="cell"></div>
+      <div id="5" class="cell"></div>
     </div>
     <!--Thirty row-->
     <div>
-      <div id="06" class="piece"></div>
-      <div id="07" class="piece"></div>
-      <div id="08" class="piece"></div>
+      <div id="6" class="cell"></div>
+      <div id="7" class="cell"></div>
+      <div id="8" class="cell"></div>
     </div>
 
 
     </div>
-    
-  </main>
 
-  <footer></footer>
+  <!--Script code-->
+<script src="./game.js"></script>
+<script src="./interface.js"></script>
+
 
 </body>
 

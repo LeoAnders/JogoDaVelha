@@ -1,38 +1,35 @@
 //DOMContentLoaded e executado quando o documento for carregado
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded",() =>{
 
-  let cell= document.querySelectorAll(".cell")
+  let cells = document.querySelectorAll(".cell")
 
-    cell.forEach((cell)=>{
-      cell.addEventListener("click",handleClick)
+  cells.forEach((cell) => {
+    cell.addEventListener("click", handleClick)
   })
 
 })
 
 function handleClick(event){
-  console.log(event.target);
 
-  let cell = event.target;
-  let position = cell.id;
+  let cell = event.target
+  let position = cell.id
 
-
-  handleMove(position);
-  updateCell()
-
+  
+  if (handleMove(position)) {
+    setTimeout(() => {
+      if (playerTime === 0) {
+        return alert("Fim de jogo! - O Vencedor foi o O");
+      } else {
+        return alert("Fim de jogo! - O Vencedor foi o X");
+      }
+    }, 10);
+  }
+  updateCells(position);
+  
 }
 
-
-function updateCell(){
-
-  let cell= document.querySelectorAll(".cell")
-
-  cell.forEach((cell)=>{
-    let position = cell.id;
-    let symbol = board[position]
-
-   if(symbol != ""){
-    cell.innerHTML = `<div class = "${symbol}"></div>`
-   }
-  })
-
+function updateCells(position) {
+  let cell = document.getElementById(position.toString());
+  let symbol = board[position];
+  cell.innerHTML = `<div class='${symbol}'></div>`;
 }
