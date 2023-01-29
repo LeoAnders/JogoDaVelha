@@ -1,13 +1,15 @@
+
 //DOMContentLoaded e executado quando o documento for carregado
 document.addEventListener("DOMContentLoaded",() =>{
 
   let cells = document.querySelectorAll(".cell")
 
-  cells.forEach((cell) => {
+    cells.forEach((cell) => {
     cell.addEventListener("click", handleClick)
   })
 
 })
+
 
 function handleClick(event){
 
@@ -28,8 +30,16 @@ function handleClick(event){
   
 }
 
+//Reiniciar jogo
+const btn = document.querySelector("#refresh")
+
+btn.addEventListener("click", () => {
+  location.reload()
+})
+
 function updateCells(position) {
   let cell = document.getElementById(position.toString());
   let symbol = board[position];
   cell.innerHTML = `<div class='${symbol}'></div>`;
 }
+

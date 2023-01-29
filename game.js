@@ -1,3 +1,4 @@
+
 //iniciar variáveis 
 
 let board = ["", "", "", "", "", "", "", "", ""]
@@ -55,4 +56,3 @@ function isWin(){
   }
   return false;
 }
-

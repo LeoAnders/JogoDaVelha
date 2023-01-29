@@ -25,10 +25,11 @@ body {
   justify-content: center;
   background-color: white;
   width: 600px;
-  height: 600px;
+  height: 650px;
   border-radius: 40px;
   text-align: center;
   box-shadow: 5px 5px 10px 2px #5c6ae7;
+  
 
 }
 
@@ -46,7 +47,7 @@ body {
 
 }
 
-/* Adicionando estilo O*/
+/* Style "O"*/
 .o {
   position: relative;
   color: white
@@ -62,7 +63,7 @@ body {
 
 }
 
-/* Adicionando estilo X*/
+/* style "X"*/
 
 .x {
   position: relative;
@@ -77,4 +78,62 @@ body {
   font-size: 100px;
   font-weight: bolder;
 
+}
+
+/*button reload page*/
+.container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  padding-top: 215px;
+ 
+}
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+#refresh{
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #83a9fc;
+    border: 1px solid #82a3fd;
+    outline: none;
+    transition: 1s ease-in-out;
+  
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 0.7s ease-in-out;
+}
+
+
+#refresh:hover {
+  transition: 1s ease-in-out;
+  background: #4797e7;
+}
+
+#refresh:hover svg {
+  stroke-dashoffset: -480;
+}
+
+#refresh span {
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 25px;
+  font-weight: 100;
 }
