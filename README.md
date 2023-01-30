@@ -25,10 +25,6 @@ Um projeto simples desenvolvido no curso ProgBR para praticar o design pattern M
  Através deste projeto, comecei a entender alguns conhecimentos que são importantes no desenvolvimento do software.<br>
 </p>
 
-
-**[Clique aqui](https://https://github.com/LeoAnders/JogoDaVelha/) e teste você mesmo**
-
-
 <h2 align="center">Tecnologias utilizadas</h2>
 
 <div display="flex">
